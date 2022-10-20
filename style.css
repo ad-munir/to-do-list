@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Silkscreen&display=swap');
+
+*{
+    font-family: 'Acme', sans-serif;
+    box-sizing: border-box;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url(img/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.title h1{
+    padding: 20px;
+    font-size: 50px;
+    font-family: 'Silkscreen', cursive;
+    text-align: center;
+}
+.main{
+    min-height: 100vh;
+    width: 1000px;
+    margin: auto;
+    background-color: rgba(165, 42, 42, 0.138);
+    border-radius: 5px;
+    margin-bottom: 105px;
+}
+.head-part{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.head-part input{
+    width: 650px;
+    height: 50px;
+    margin: 20px;
+    border: solid 2px;
+    padding: 0 15px;
+    border-color: rgb(99, 8, 133);
+}
+
+button{
+    cursor: pointer;
+    border-radius: 5px;
+}
+#add, #clear{
+    border-color: rgb(219, 219, 219);
+    color: rgb(0, 0, 0);
+    background-color: rgb(100, 8, 133);
+    color: white;
+}
+#add:hover, #clear:hover{
+    background-color: rgba(255, 255, 255, 0);
+    border-color: rgb(100, 8, 133);
+}
+#clear{
+    color: yellow;
+}
+.head-part button{
+    height: 50px;
+    width: 85px;
+    margin-left: 10px;
+}
+.list{
+    padding: 15px;
+}
+li{
+    
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.142);
+}
+li span{
+    width: 875px;
+    overflow-x: auto;
+}
+li button{
+    cursor: pointer;
+    border: none;
+    margin-left: 15px;
+    background-color: transparent;
+    color: red;
+    font-size: larger;
+}
+li button:hover{
+    color: rgb(0, 0, 0);
+    font-size: x-large;
+}
+
+/*--- sweet alert className="sweet" ---*/
+
+
+/*--- media queries" ---*/
+
+
+@media screen and (max-width: 810px) {
+    *{
+        font-size: 15px;
+    }
+    .title h1{
+        font-size: 35px;
+    }
+    .main{
+        min-height: 100vh;
+        width: 300px;
+        margin: auto;
+        margin-bottom: 35px;
+    }
+    .head-part input{
+        width: 150px;
+        height: 35px;
+        margin: 10px;
+        padding: 0 10px;
+        border-color: rgb(99, 8, 133);
+    }
+    .head-part button{
+        height: 35px;
+        margin-left: 10px;
+    }
+    .list{
+        padding: 8px;
+    }
+    li{
+        height: 35px;
+        padding:0 8px;
+        margin-bottom: 7px;
+    }
+}
+
